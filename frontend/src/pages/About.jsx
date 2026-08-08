@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 export default function About(){
   return <div className="about-page">
     <section className="about-hero">
-      <div className="about-avatar">SS</div>
+      <div className="about-avatar">MS</div>
       <div>
         <span className="eyebrow">PROJECT PROFILE</span>
-        <h1>About Me</h1>
+        <h1>Muhammad Shaheer Shaikh</h1>
         <p className="about-lead">Student profile and project information for the CivicAI Smart Civic Services application.</p>
       </div>
     </section>
@@ -14,6 +14,8 @@ export default function About(){
     <div className="about-grid">
       <section className="panel profile-card">
         <div className="profile-label">STUDENT DETAILS</div>
+        <div className="profile-row"><span>Name</span><strong>Muhammad Shaheer Shaikh</strong></div>
+        <div className="profile-row"><span>Father's Name</span><strong>Salahuddin</strong></div>
         <div className="profile-row"><span>Roll No.</span><strong>AIDS-797327</strong></div>
         <div className="profile-row"><span>Program</span><strong>SMIT AI Data Science</strong></div>
         <div className="profile-row"><span>Batch</span><strong>Batch 4 Student</strong></div>
