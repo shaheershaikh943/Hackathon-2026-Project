@@ -1,0 +1,2 @@
+import {useEffect,useState} from "react";
+export default function AnimatedNumber({value=0,duration=700}){const[n,setN]=useState(0);useEffect(()=>{let start=null;const target=Number(value)||0;const step=t=>{if(start===null)start=t;const p=Math.min((t-start)/duration,1);setN(Math.round(target*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);},[value,duration]);return <>{n}</>}
